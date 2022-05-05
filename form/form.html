@@ -1,0 +1,30 @@
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="form.css">
+
+<body>
+    <form method="post" id="logIn-form">
+        <div class="form-name">
+            <h2>Login</h2>
+            <div class="form-close"><i class='bx bx-message-square-minus'></i></div>
+        </div>
+        <div class="login-form">
+            <div class="form-group">
+                <label for="login-username">Username:</label>
+                <input type="text" name="username" id="login-username" placeholder="Please enter username...">
+                <span class="text-danger login-error" style="font-size: 12px;" id="login-username-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input type="text" name="password" id="login-password" placeholder="Please enter password..." autocomplete="off">
+                <span class="text-danger login-error" style="font-size: 12px;" id="login-password-error"></span>
+            </div>
+        </div>
+        <div id="login-btn">
+            <button type="submit" class="btn-btn-primary">Login</button>
+        </div>
+        <div id="signup-btn">
+            <label for="signup-title">Don't have account?</label>
+            <a href="">SignUp</a>
+        </div>
+    </form>
+</body>

@@ -1,0 +1,61 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logIn-form {
+    position: relative;
+    background-color: papayawhip;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.form-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-name h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-form {
+    padding: 5px;
+}
+
+.form-group {
+    padding-bottom: 5px;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+input {
+    width: 100%;
+}
+
+#login-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#signup-btn {
+    padding: 8px 0;
+}
+
+#signup-btn a {
+    float: right;
+    color: red;
+    text-decoration: none;
+}
