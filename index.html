@@ -5,43 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
     <title>ManTang</title>
 </head>
 
 <body>
-
     <header>
-        <p style="padding: 2px;">Cố gắng làm những việc mình thích, mình đam mê. Cố gắng giữ sức khỏe bản thân.</p>
         <nav>
             <div class="nav-brand">
                 <h3>min</h3>
-                <label for="nav-togger" id="nav-mobi-btn"><i class='bx bx-menu-alt-right'></i></label>
+                <label for="nav-togger" id="nav-mobi-btn"><i class='bx bx-menu-alt-right' style="font-size: 22px; padding: 10px;"></i></label>
             </div>
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="">truyện tranh</a></li>
-                    <li><a href="">truyện chữ</a></li>
-                    <li>
-                        <a href="./form/form.html" class='bx bxs-user' style="font-size: 22px;"></a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="">home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">truyện tranh</a></li>
+                <li class="nav-item"><a class="nav-link" href="">truyện chữ</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./form/loginForm.html"><i class='bx bxs-user' style="font-size: 22px;"></i></a>
+                </li>
+            </ul>
         </nav>
         <input type="checkbox" id="nav-togger" hidden>
         <!-- <label for="nav-togger" class="nav-overlay"></label> -->
         <div id="nav-mobi">
             <label id="nav-mobi-close" class='bx bx-minus-circle' for="nav-togger"></label>
             <ul class="nav-mobi-menu">
-                <li><a href="">home</a></li>
-                <li><a href="">truyện tranh</a></li>
-                <li><a href="">truyện chữ</a></li>
-                <li>
-                    <a href="./form/form.html" class='bx bxs-user' style="font-size: 22px;"></a>
+                <li class="nav-item"><a class="nav-link" href="">home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">truyện tranh</a></li>
+                <li class="nav-item"><a class="nav-link" href="">truyện chữ</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./form/loginForm.html"><i class='bx bxs-user' style="font-size: 22px;"></i></a>
                 </li>
             </ul>
         </div>
@@ -53,7 +49,15 @@
             </form>
         </div>
     </header>
+
     <div class="container">
+        <div class="slogan">
+            <span>Hello</span>
+        </div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Trang cấp 1</a></li>
+        </ol>
         <div id="main-content">
             <section class="main-content">
                 <div id="latest">
@@ -62,24 +66,31 @@
                     </div>
                     <div class="latest-cards">
                         <div class="card">
-                            <div class="card-image"></div>
-                            <div class="card-name">Latest 1</div>
-                            <div class="card-description">Author: </div>
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Title 1</h5>
+                                <h6 class="card-subtitle">tác giả:</h6>
+                                <p class="card-text">nội dung</p>
+                                <a href="#" class=""></a>
+                            </div>
                         </div>
                         <div class="card">
-                            <div class="card-image"></div>
-                            <div class="card-name">Latest 1</div>
-                            <div class="card-description">Author: </div>
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <h6 class="card-subtitle"></h6>
+                                <p class="card-text"></p>
+                                <a href="#" class=""></a>
+                            </div>
                         </div>
                         <div class="card">
-                            <div class="card-image"></div>
-                            <div class="card-name">Latest 1</div>
-                            <div class="card-description">Author: </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-image"></div>
-                            <div class="card-name">Latest 1</div>
-                            <div class="card-description">Author: </div>
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <h6 class="card-subtitle"></h6>
+                                <p class="card-text"></p>
+                                <a href="#" class=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -89,9 +100,13 @@
                     </div>
                     <div class="main-cards">
                         <div class="card">
-                            <div class="card-image"></div>
-                            <div class="card-name">Main 1</div>
-                            <div class="card-description">Author: </div>
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <h6 class="card-subtitle"></h6>
+                                <p class="card-text"></p>
+                                <a href="#" class=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -103,14 +118,13 @@
                     </div>
                     <div class="recent-cards">
                         <div class="card">
-                            <div class="card-image"></div>
-                            <div class="card-name">Main 1</div>
-                            <div class="card-description">Author: </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-image"></div>
-                            <div class="card-name">Main 1</div>
-                            <div class="card-description">Author: </div>
+                            <img class="card-img-top" src="" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <h6 class="card-subtitle"></h6>
+                                <p class="card-text"></p>
+                                <a href="#" class=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -128,21 +142,21 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/kingangle.dark/" class='bx bxl-facebook-circle'></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/mannguyet12/" class='bx bxl-instagram'></a>
-                </li>
-                <li>
-                    <a href="https://github.com/ManTT-12" class='bx bxl-github'></a>
-                </li>
-            </ul>
-            <p>Được thiết kế bởi Man Tang</p>
-        </footer>
     </div>
+    <footer>
+        <ul class="footer-social">
+            <li>
+                <a href="https://www.facebook.com/kingangle.dark/" class='bx bxl-facebook-circle'></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/mannguyet12/" class='bx bxl-instagram'></a>
+            </li>
+            <li>
+                <a href="https://github.com/ManTT-12" class='bx bxl-github'></a>
+            </li>
+        </ul>
+        <p>Được thiết kế bởi Man Tang</p>
+    </footer>
 </body>
 
 </html>

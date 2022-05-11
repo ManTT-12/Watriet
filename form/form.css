@@ -9,7 +9,8 @@ body {
     align-items: center;
 }
 
-#logIn-form {
+#logIn-form,
+#signup-form {
     position: relative;
     background-color: papayawhip;
     padding: 20px;
@@ -58,4 +59,8 @@ input {
     float: right;
     color: red;
     text-decoration: none;
+}
+
+.signup-btn {
+    width: 100%;
 }

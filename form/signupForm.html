@@ -1,0 +1,31 @@
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="form.css">
+
+<body>
+    <form method="post" id="signup-form">
+        <div class="form-name">
+            <h2>Sign Up</h2>
+            <div class="form-close"><i class='bx bx-message-square-minus'></i></div>
+        </div>
+        <div class="signup-form">
+            <div class="form-group">
+                <label for="signup-name">Họ và Tên:</label>
+                <input type="text" name="name" id="signup-name" placeholder="Please enter first name and last name">
+                <span class="text-danger signup-error" style="font-size: 12px" id="signup-name-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="signup-username">Username:</label>
+                <input type="text" name="username" id="signup-username" placeholder="Please enter username...">
+                <span class="text-danger signup-error" style="font-size: 12px;" id="signup-username-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password:</label>
+                <input type="text" name="password" id="signup-password" placeholder="Please enter password..." autocomplete="off">
+                <span class="text-danger signup-error" style="font-size: 12px;" id="signup-password-error"></span>
+            </div>
+        </div>
+        <div class="signup-btn">
+            <button type="submit" class="btn-btn-primary">Sign up</button>
+        </div>
+    </form>
+</body>

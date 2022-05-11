@@ -16,28 +16,13 @@
     box-sizing: border-box;
 }
 
-
-/* body {
-    background-image: url(./hinh-anh-do-an-de-thuong-cuc-dep_095148875.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 100%;
-    width: 100%;
-} */
-
-.container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
 header {
     position: fixed;
     width: 100%;
     padding: 2px;
     text-align: center;
     text-transform: capitalize;
-    max-height: 110px;
+    max-height: 85px;
     border-bottom: 1px solid var(--nav-border-color);
     background-color: var(--nav-background-color);
     z-index: 1;
@@ -50,48 +35,37 @@ nav {
     position: fixed;
     display: flex;
     justify-content: center;
-    border-top: 1px solid var(--nav-border-color);
     border-bottom: 1px solid var(--nav-border-color);
     width: 100%;
-    max-height: fit-content;
-    margin-top: 28px;
+    max-height: 48px;
     background-color: var(--nav-background-color);
     align-items: center;
     z-index: 2;
 }
 
-.nav-brand,
-.nav-mini-brand {
+.nav-brand h3 {
+    font-family: cursive;
     text-transform: uppercase;
     color: indianred;
-    font-size: 20px;
     padding: 5px 20px;
     text-align: center;
     font-weight: bold;
 }
 
-.nav-menu ul {
+.nav-menu {
     display: inline-flex;
-}
-
-.nav-menu li {
-    padding: 5px 15px;
+    margin: 0;
 }
 
 .nav-menu a,
 .nav-mobi-menu a {
-    text-transform: capitalize;
-    font-size: 18px;
     color: black;
+    font-weight: bold;
 }
 
 .nav-menu a:hover,
 .nav-mobi-menu a:hover {
     color: lightcoral;
-}
-
-.nav-mobi-menu li {
-    padding: 5px;
 }
 
 .nav-menu li:hover,
@@ -152,8 +126,7 @@ nav {
 .search-bar {
     position: absolute;
     margin-top: auto;
-    /* margin-top: 88px; */
-    width: 100%;
+    width: 60%;
     max-height: 35px;
     padding: 5px 10px;
     align-content: center;
@@ -169,23 +142,30 @@ form {
 input {
     width: 100%;
     height: 25px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 8px 0 0 8px;
+    padding: 2px;
 }
 
 button {
-    font-size: 16px;
+    font-size: 14px;
     width: 40px;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 8px 8px 0;
     background-color: papayawhip;
 }
 
-@media screen and (max-width: 700px) {
-    header {
-        max-height: 110px;
+@media screen and (min-width: 767px) {
+    #nav-mobi-btn {
+        display: none;
     }
-    nav {
-        margin-top: 30px;
+}
+
+@media screen and (min-width: 519px) {
+    #nav-mobi-btn {
+        display: none;
     }
+}
+
+@media screen and (max-width: 520px) {
     .nav-menu {
         display: none;
     }
@@ -196,40 +176,18 @@ button {
     }
 }
 
-@media screen and (min-width: 700px) {
-    #nav-mobi,
-    #nav-mobi-btn {
-        display: none;
-    }
-}
 
-@media screen and (max-width: 400px) {
-    header {
-        max-height: 128px;
-    }
-    nav {
-        margin-top: 48px;
-    }
-}
+/* main content */
 
-@media screen and (min-width: 400px) {
-    header {
-        max-height: 128px;
-    }
-    nav {
-        margin-top: 48px;
-    }
+.container {
+    margin-top: 85px;
 }
 
 .slogan {
-    display: flex;
-    flex-direction: column;
+    text-decoration: underline;
 }
 
 #main-content {
-    margin: 10px 10px;
-    margin-top: 125px;
-    padding: 10px;
     z-index: 100;
     display: flex;
     justify-content: space-between;
@@ -243,7 +201,6 @@ button {
 #recent-view,
 #rank-view {
     padding: 5px;
-    margin-bottom: 10px;
 }
 
 .latest-title h3,
@@ -252,25 +209,14 @@ button {
 .rank-title h3 {
     text-transform: capitalize;
     color: black;
-    padding-bottom: 5px;
-}
-
-
-/* .latest-cards,
-.main-cards,
-.recent-cards,
-.rank-list {
-    padding-top: 8px;
-} */
-
-.main-cards {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .latest-cards {
-    display: flex;
-    flex-wrap: nowrap;
+    display: -webkit-box;
+}
+
+.main-cards {
+    display: -webkit-box;
 }
 
 .latest-cards .card,
@@ -279,6 +225,9 @@ button {
     margin-right: 5px;
     padding: 5px;
 }
+
+
+/* sidebar */
 
 #sidebar {
     width: 20%;
@@ -337,11 +286,6 @@ footer a {
     height: 50px;
     width: 50px;
     color: lightcoral
-}
-
-footer a .fa-brands {
-    width: 100%;
-    height: 100%;
 }
 
 footer p {
