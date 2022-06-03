@@ -1,11 +1,22 @@
-<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-<link rel="stylesheet" href="form.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./form.css">
+    <title>Đăng nhập</title>
+</head>
 
 <body>
     <form method="post" id="logIn-form">
         <div class="form-name">
             <h2>Login</h2>
-            <div class="form-close"><i class='bx bx-message-square-minus'></i></div>
+            <a href="../index.html" class="form-close"><i class='bx bx-left-arrow-alt'></i>Home</a>
         </div>
         <div class="login-form">
             <div class="form-group">
@@ -15,12 +26,13 @@
             </div>
             <div class="form-group">
                 <label for="login-password">Password:</label>
-                <input type="text" name="password" id="login-password" placeholder="Please enter password..." autocomplete="off">
+                <input type="text" name="password" id="login-password" placeholder="Please enter password..."
+                    autocomplete="off">
                 <span class="text-danger login-error" style="font-size: 12px;" id="login-password-error"></span>
             </div>
         </div>
         <div id="login-btn">
-            <button type="submit" class="btn-btn-primary">Login</button>
+            <button type="submit" class="login-btn">Login</button>
         </div>
         <div id="signup-btn">
             <label for="signup-title">Don't have account?</label>
@@ -28,3 +40,5 @@
         </div>
     </form>
 </body>
+
+</html>

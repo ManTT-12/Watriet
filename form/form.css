@@ -1,26 +1,45 @@
 * {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: white;
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-#logIn-form,
-#signup-form {
+form {
     position: relative;
-    background-color: papayawhip;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 6px;
+    display: block;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.form-name,
+.login-form,
+.signup-form,
+#login-btn,
+#signup-btn,
+.signup-btn {
+    padding: 5px;
 }
 
 .form-name {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -29,12 +48,17 @@ body {
     text-align: center;
 }
 
-.login-form {
-    padding: 5px;
+.form-close {
+    color: black;
+}
+
+.form-close:hover {
+    text-decoration: underline;
+    color: red
 }
 
 .form-group {
-    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 label {
@@ -45,22 +69,41 @@ input {
     width: 100%;
 }
 
+/* login form */
 #login-btn {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 5px;
 }
 
-#signup-btn {
-    padding: 8px 0;
+#login-btn button {
+    width: 70px;
 }
+
 
 #signup-btn a {
-    float: right;
     color: red;
-    text-decoration: none;
 }
 
-.signup-btn {
+#signup-btn a:hover {
+    text-decoration: underline;
+}
+
+/* signup form */
+.signup-btn button {
     width: 100%;
+}
+
+.bx {
+    font-size: 20px;
+}
+
+/* all */
+#login-btn button,
+.signup-btn button {
+    border: 1px solid lightblue;
+    background-color: rgb(146, 212, 235);
+    border-radius: 20px;
+    font-size: 15px;
 }
