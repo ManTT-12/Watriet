@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- boxicon -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/index.css">
     <title>ManTang</title>
@@ -16,8 +18,8 @@
     <header>
         <nav>
             <div class="nav-brand">
-                <h3>min</h3>
-                <label for="nav-togger" id="nav-mobi-btn"><i class='bx bx-menu-alt-right'
+                min
+                <label for="nav-toggle" id="nav-mobi-btn"><i class='bx bx-menu-alt-right'
                         style="font-size: 22px; padding: 10px;"></i></label>
             </div>
             <ul class="nav-menu">
@@ -28,12 +30,16 @@
                     <a class="nav-link" href="./form/loginForm.html"><i class='bx bxs-user'
                             style="font-size: 22px;"></i></a>
                 </li>
+                <li class="search-bar">
+                    <input type="text" name="search" id="search-txt" placeholder="Search..." autocomplete="false">
+                    <i class='bx bx-search'></i>
+                </li>
             </ul>
         </nav>
-        <input type="checkbox" id="nav-togger" hidden>
+        <input type="checkbox" id="nav-toggle" hidden>
         <!-- <label for="nav-togger" class="nav-overlay"></label> -->
         <div id="nav-mobi">
-            <label id="nav-mobi-close" class='bx bx-minus-circle' for="nav-togger"></label>
+            <label id="nav-mobi-close" class='bx bx-minus-circle' for="nav-toggle"></label>
             <ul class="nav-mobi-menu">
                 <li class="nav-item"><a class="nav-link" href="">home</a></li>
                 <li class="nav-item"><a class="nav-link" href="">truyện tranh</a></li>
@@ -43,13 +49,6 @@
                             style="font-size: 22px;"></i></a>
                 </li>
             </ul>
-        </div>
-        <label for="search-bar" class='bx bx-search' id="search-bar-btn" style="display: none;"></label>
-        <div class="search-bar">
-            <form action="" method="get" id="search-box">
-                <input type="text" name="search" id="search-txt" placeholder="Search..." autocomplete="false">
-                <button type="submit"><i class='bx bx-search'></i></button>
-            </form>
         </div>
     </header>
 
