@@ -19,7 +19,7 @@
         <nav>
             <div class="nav_brand">
                 min
-                <label for="nav-toggle" id="nav-mobi-btn"><i class='bx bx-menu-alt-right'></i></label>
+                <div class="nav_toggle" onclick="toggleMenu()"><i class='bx bx-menu-alt-right'></i></div>
             </div>
             <ul class="nav_menu">
                 <li class="nav-item"><a class="nav-link" href="">home</a></li>
@@ -34,19 +34,19 @@
                 </li>
             </ul>
         </nav>
-        <input type="checkbox" id="nav-toggle" hidden>
-        <label for="nav-togger" class="nav-overlay"></label>
-        <div id="nav-mobi">
-            <label id="nav-mobi-close" for="nav-toggle"><i class='bx bx-minus-circle'></i></label>
-            <ul class="nav_mobi_menu">
-                <li class="nav-item"><a class="nav-link" href="">home</a></li>
-                <li class="nav-item"><a class="nav-link" href="">truyện tranh</a></li>
-                <li class="nav-item"><a class="nav-link" href="">truyện chữ</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./form/loginForm.html"><i class='bx bxs-user'></i></a>
-                </li>
-            </ul>
-        </div>
+        <ul class="nav_mobi">
+            <div class="nav_close" onclick="toggleMenu()"><i class='bx bx-x-circle'></i></div>
+            <li class="nav-item"><a class="nav-link" href="">home</a></li>
+            <li class="nav-item"><a class="nav-link" href="">truyện tranh</a></li>
+            <li class="nav-item"><a class="nav-link" href="">truyện chữ</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="./form/loginForm.html"><i class='bx bxs-user'></i></a>
+            </li>
+            <li class="search_bar">
+                <input type="text" name="search" id="search-txt" placeholder="Search..." autocomplete="false">
+                <i class='bx bx-search'></i>
+            </li>
+        </ul>
     </header>
     <main>
         <ol class="breadcrumb">
@@ -155,7 +155,7 @@
         </ul>
         <p>Được thiết kế bởi Man Tang</p>
     </footer>
-    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
